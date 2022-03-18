@@ -18,16 +18,16 @@ namespace snake_game
             Draw(x_1,y_1,sym_1);
             */
 
-            Point p1 = new Point();
-            p1.x = 1;
+            Point p1 = new Point(1,3,'*');
+            /*p1.x = 1;
             p1.y = 3;
-            p1.sym = '*';
+            p1.sym = '*';*/
             p1.Draw();
 
-            Point p2 = new Point();
-            p2.x = 2;
+            Point p2 = new Point(2,4,'#');
+            /*p2.x = 2;
             p2.y = 4;
-            p2.sym = '#';
+            p2.sym = '#';*/
             p2.Draw();
 
             Console.ReadLine();
