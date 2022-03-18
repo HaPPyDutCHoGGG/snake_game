@@ -1,0 +1,13 @@
+D:\repos\snake_game\snake_game\snake_game\bin\Debug\netcoreapp3.1\snake_game.exe
+D:\repos\snake_game\snake_game\snake_game\bin\Debug\netcoreapp3.1\snake_game.deps.json
+D:\repos\snake_game\snake_game\snake_game\bin\Debug\netcoreapp3.1\snake_game.runtimeconfig.json
+D:\repos\snake_game\snake_game\snake_game\bin\Debug\netcoreapp3.1\snake_game.runtimeconfig.dev.json
+D:\repos\snake_game\snake_game\snake_game\bin\Debug\netcoreapp3.1\snake_game.dll
+D:\repos\snake_game\snake_game\snake_game\bin\Debug\netcoreapp3.1\snake_game.pdb
+D:\repos\snake_game\snake_game\snake_game\obj\Debug\netcoreapp3.1\snake_game.csprojAssemblyReference.cache
+D:\repos\snake_game\snake_game\snake_game\obj\Debug\netcoreapp3.1\snake_game.AssemblyInfoInputs.cache
+D:\repos\snake_game\snake_game\snake_game\obj\Debug\netcoreapp3.1\snake_game.AssemblyInfo.cs
+D:\repos\snake_game\snake_game\snake_game\obj\Debug\netcoreapp3.1\snake_game.csproj.CoreCompileInputs.cache
+D:\repos\snake_game\snake_game\snake_game\obj\Debug\netcoreapp3.1\snake_game.dll
+D:\repos\snake_game\snake_game\snake_game\obj\Debug\netcoreapp3.1\snake_game.pdb
+D:\repos\snake_game\snake_game\snake_game\obj\Debug\netcoreapp3.1\snake_game.genruntimeconfig.cache
