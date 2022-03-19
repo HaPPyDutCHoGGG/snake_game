@@ -10,34 +10,39 @@ namespace snake_game
     {
         static void Main(string[] args)
         {
-            /*
-            int x_1 = 1;
-            int y_1 = 3;
-            char sym_1 = '*';
+      
 
-            Draw(x_1,y_1,sym_1);
-            */
-
-            Point p1 = new Point(1,3,'*');
-            /*p1.x = 1;
-            p1.y = 3;
-            p1.sym = '*';*/
+            /*Point p1 = new Point(1,3,'*');
             p1.Draw();
 
             Point p2 = new Point(2,4,'#');
-            /*p2.x = 2;
-            p2.y = 4;
-            p2.sym = '#';*/
-            p2.Draw();
+            p2.Draw();*/
 
-            Console.ReadLine();
-        }
-        /*
-        static void Draw(int x, int y, char sym)
-        {
-            Console.SetCursorPosition(x, y);
-            Console.Write(sym);
-        }
-        */
+            Horizontal_Line line1 = new Horizontal_Line(5,10,10,'#');
+            line1.Draww();
+            Horizontal_Line line2 = new Horizontal_Line(5, 10, 15, '#');
+            line2.Draww();
+
+            Vertical_Line line3 = new Vertical_Line(10, 15, 5, '#');
+            line3.Draww();
+            Vertical_Line line4 = new Vertical_Line(10, 15, 10, '#');
+            line4.Draww();
+
+            /*List<int> numList = new List<int>();
+            numList.Add(2);
+            numList.Add(1);
+            numList.Add(0);
+
+            int x = numList[0];
+            int y = numList[1];
+            int z = numList[2];
+
+            foreach (int i in numList) {
+                Console.WriteLine(numList[i]);
+            }*/
+
+            Console.ReadLine(); 
+
+        }     
     }
 }
