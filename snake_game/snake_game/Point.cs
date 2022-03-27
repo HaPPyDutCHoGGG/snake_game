@@ -10,12 +10,14 @@ namespace snake_game
         public int y;
         public char sym;
 
+        //constructor-description of point
         public Point(int _x, int _y, char _sym)
         {
             x = _x;
             y = _y;
             sym = _sym;
         }
+        // parameter for point of tail
         public Point(Point p)
         {
             x = p.x;
@@ -38,6 +40,11 @@ namespace snake_game
         {
             Console.SetCursorPosition(x, y);
             Console.Write(sym);
+        }
+        public void Clear()
+        {
+            sym = ' ';
+            Draw();
         }
     }
 }
