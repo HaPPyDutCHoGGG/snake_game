@@ -26,7 +26,10 @@ namespace snake_game
             Vertical_Line ver_line_right = new Vertical_Line(0, Console.WindowHeight - 1, Console.WindowWidth - 1, '█');
             ver_line_right.Draww();
 
-            //
+            //snake
+            Point p = new Point(5, 4, '*');
+            snake snake = new snake(p, 4, Direction.RIGHT);
+            snake.Draww();
 
 
 
