@@ -7,7 +7,7 @@ namespace snake_game
 {
     class snake: Figure
     {
-        Direction direction;
+        public Direction direction;
         public snake(Point tail, int length, Direction _direction)
         {
             direction = _direction;
@@ -23,14 +23,14 @@ namespace snake_game
         {
             Point tail = pList.First();
             pList.Remove(tail);
-            Point head = GetNextPoint();
+            Point head = get_Next_point();
             pList.Add(head);
 
             tail.Clear();
             head.Draw();
         }
 
-        public Point GetNextPoint() 
+        public Point get_Next_point() 
         {
             Point head = pList.Last();
             Point next_point = new Point(head);
