@@ -24,17 +24,18 @@ namespace snake_game
             y = p.y;
             sym = p.sym;
         }
-        public void Move(int offset, Direction direction)
-        {
-            if (direction == Direction.RIGHT)
-                x += offset;
-            if (direction == Direction.LEFT)
-                x -= offset;
-            if (direction == Direction.UP)
-                y += offset;
-            if (direction == Direction.DOWN)
-                y -= offset;
-        }
+         public void Move(int offset, Direction direction)
+         {
+             if (direction == Direction.RIGHT)
+                 x += offset;
+             if (direction == Direction.LEFT)
+                 x -= offset;
+             if (direction == Direction.UP)
+                 y += offset;
+             if (direction == Direction.DOWN)
+                 y -= offset;
+         }
+
 
         public void Draw()
         {
