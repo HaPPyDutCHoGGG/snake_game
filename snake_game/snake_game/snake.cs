@@ -52,5 +52,19 @@ namespace snake_game
             else if (key == ConsoleKey.DownArrow)
                 direction = Direction.UP;
         }
+        internal bool Eat(Point food)
+        {
+            Point head = get_Next_point();
+            if ((head.x == food.x) && (head.y == food.y))
+            {
+                food.sym = head.sym;
+                pList.Add(food);
+                // ^ this is length++;
+                // |
+                return true;
+            }
+            else
+                return false;
+        }
     }
 }

@@ -11,9 +11,9 @@ namespace snake_game
     {
         static void Main(string[] args)
         {
-            Console.WindowHeight = Console.LargestWindowHeight;
-            Console.WindowWidth = Console.LargestWindowWidth;
-            Console.SetBufferSize(Console.LargestWindowWidth, Console.LargestWindowHeight);
+            var map_height = Console.LargestWindowHeight;
+            var map_width = Console.LargestWindowWidth;
+            Console.SetBufferSize(map_width, map_height);
 
 
             /*
@@ -41,17 +41,30 @@ namespace snake_game
             snake.Draww();
             snake.Move();
 
+            Food_Creator foodCreator = new Food_Creator(Console.LargestWindowWidth, Console.LargestWindowHeight, '$');
+            Point food = foodCreator.Create_food();
+            food.Draw();
+
             while (true)
             {
-                
+                if (snake.Eat(food))
+                {
+                    food = foodCreator.Create_food();
+                    food.Draw();
+                }
+                else
+                {
+                    snake.Move();
+                }
+                //Food_Creator.feedSnake();*/
+
+                Thread.Sleep(50);
+
                 if (Console.KeyAvailable)
                 {
                     ConsoleKeyInfo key = Console.ReadKey();
                     snake.conrols(key.Key);
-                }
-                
-                Thread.Sleep(50);
-                snake.Move();
+                }                
             }
 
             Console.ReadLine(); 
